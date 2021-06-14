@@ -154,3 +154,44 @@ def say_hello():
     print("Hello, friends!")
 
 say_hello()
+
+
+#Another If statment program
+
+def wash_car(amount_paid):
+    if (amount_paid == 12):
+        print("Wash with tri-color foam")
+        print("Rinse twice")
+        print("Dry with large blow dryer")
+   
+    if (amount_paid == 6):
+        print("Wash with white foam")
+        print("Rinse once")
+        print("Air dry") 
+
+wash_car(12)
+
+
+#Functions that return a value.
+
+def withdraw_money(current_balance, amount):
+    if (current_balance >= amount):
+        current_balance = current_balance - amount
+        return current_balance
+
+balance = withdraw_money(100, 80)
+
+if (balance <= 50):
+    print("We need to make a deposit")
+else:
+     print("Nothing to see here!")
+
+
+#prints out the name of a favorite city
+
+def favorite_city(name):
+  print("One of my favorite cities is", name)
+
+favorite_city("Seattle, Washington")
+favorite_city("New York, New York")
+favorite_city("Sydney, Australia")
